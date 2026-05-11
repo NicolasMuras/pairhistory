@@ -3,7 +3,7 @@
 Architectural patterns for multi-party LLM dialogue. Reference harness and captured send-lists.
 
 This repo accompanies the blog post:
-**[Multi-Party LLM Conversations Aren't Unsolvable. Everyone's Just Looking at Them Wrong.][BLOG_POST_URL]**
+**[Multi-Party LLM Conversations Aren't Unsolvable. Everyone's Just Looking at Them Wrong.](https://medium.com/@nicolasmuras/multi-party-llm-conversations-arent-unsolvable-everyone-s-just-looking-at-them-wrong-aafe30765148)**
 
 It contains the replay harness, the canonical send-lists used in the empirical results, and a worked example showing the system running end-to-end. Anyone with LM Studio and the same model can reproduce the numbers reported in the post in under ten minutes.
 
