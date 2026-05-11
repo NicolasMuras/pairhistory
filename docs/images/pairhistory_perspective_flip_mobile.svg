@@ -1,0 +1,174 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 2540" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+  <!-- Background -->
+  <rect width="800" height="2540" fill="#fafaf7"/>
+
+  <!-- ============================================ -->
+  <!-- HEADER -->
+  <!-- ============================================ -->
+  <text x="400" y="50" text-anchor="middle" font-size="22" font-weight="700" fill="#1a1a1a">
+    The same NPC, two pair histories
+  </text>
+  <text x="400" y="80" text-anchor="middle" font-size="15" fill="#6b6b6b">
+    What the LLM actually sees on each turn
+  </text>
+
+  <!-- ============================================ -->
+  <!-- TURN 5 PANEL -->
+  <!-- ============================================ -->
+
+  <!-- Panel header -->
+  <rect x="20" y="120" width="760" height="48" fill="#1a1a1a" rx="4"/>
+  <text x="38" y="150" font-size="18" font-weight="700" fill="#ffffff">Turn 5 — Marco → Elena</text>
+  <text x="762" y="150" text-anchor="end" font-size="12" fill="#a8a8a8" font-family="ui-monospace, 'SF Mono', Menlo, monospace">(Marco, Elena)</text>
+
+  <!-- 1. Character card -->
+  <rect x="20" y="184" width="760" height="60" fill="#eef2f7" stroke="#c8d4e0" stroke-width="1" rx="4"/>
+  <text x="38" y="206" font-size="13" font-weight="600" fill="#5a6b80" font-family="ui-monospace, 'SF Mono', Menlo, monospace">SYSTEM</text>
+  <text x="38" y="230" font-size="16" fill="#2d2d2d" font-style="italic">Marco's character card — personality, voice, rules</text>
+
+  <!-- 2. Current scene -->
+  <rect x="20" y="256" width="760" height="184" fill="#eef2f7" stroke="#c8d4e0" stroke-width="1" rx="4"/>
+  <text x="38" y="278" font-size="13" font-weight="600" fill="#5a6b80" font-family="ui-monospace, 'SF Mono', Menlo, monospace">SYSTEM — CURRENT SCENE STATE</text>
+  <text x="38" y="304" font-size="16" fill="#2d2d2d">Current scene: It's evening. You are at Elena's</text>
+  <text x="38" y="324" font-size="16" fill="#2d2d2d">Apartment. Elena is here with you. Elena is your</text>
+  <text x="38" y="344" font-size="16" fill="#2d2d2d">Friend. You like <tspan fill="#c8421a" font-weight="700">her</tspan> a lot; you genuinely</text>
+  <text x="38" y="364" font-size="16" fill="#2d2d2d">enjoy <tspan fill="#c8421a" font-weight="700">her</tspan> company. Sam is also part of this</text>
+  <text x="38" y="384" font-size="16" fill="#2d2d2d">conversation. You do not really know Sam.</text>
+  <text x="38" y="412" font-size="16" font-weight="700" fill="#5a4fcf">You are speaking directly to Elena.</text>
+
+  <!-- 3. User message (Elena's line + parenthetical) -->
+  <rect x="20" y="452" width="760" height="146" fill="#faf3e8" stroke="#e0d3b8" stroke-width="1" rx="4"/>
+  <text x="38" y="474" font-size="13" font-weight="600" fill="#806020" font-family="ui-monospace, 'SF Mono', Menlo, monospace">USER — Elena's line from the (Marco, Elena) pair</text>
+  <text x="38" y="502" font-size="16" fill="#2d2d2d">Marco, stop doing that. The book is good and</text>
+  <text x="38" y="522" font-size="16" fill="#2d2d2d">you know it. Why do you always make it sound</text>
+  <text x="38" y="542" font-size="16" fill="#2d2d2d">like you're failing?</text>
+  <text x="38" y="578" font-size="16" fill="#c8421a" font-weight="700">(Elena is waiting for your response.)</text>
+
+  <!-- Note about no cross-events -->
+  <text x="38" y="618" font-size="14" fill="#6b6b6b" font-style="italic">No "Recent events" block here: the only event</text>
+  <text x="38" y="636" font-size="14" fill="#6b6b6b" font-style="italic">outside the active pair is Marco's own earlier line,</text>
+  <text x="38" y="654" font-size="14" fill="#6b6b6b" font-style="italic">which the cross-event injector excludes.</text>
+
+  <!-- Response label -->
+  <text x="38" y="694" font-size="14" font-weight="600" fill="#1a8a5a" font-family="ui-monospace, 'SF Mono', Menlo, monospace">↓ LLM RESPONSE</text>
+
+  <!-- Response box -->
+  <rect x="20" y="708" width="760" height="106" fill="#e8f4ea" stroke="#a8d4b4" stroke-width="1" rx="4"/>
+  <text x="38" y="732" font-size="13" font-weight="600" fill="#1a8a5a" font-family="ui-monospace, 'SF Mono', Menlo, monospace">MARCO</text>
+  <text x="38" y="758" font-size="16" fill="#1a1a1a" font-weight="500">[sad] Because it might be failing, Elena. You've</text>
+  <text x="38" y="778" font-size="16" fill="#1a1a1a" font-weight="500">read the last draft. We both know it's not where</text>
+  <text x="38" y="798" font-size="16" fill="#1a1a1a" font-weight="500">it should be.</text>
+
+  <!-- Separator -->
+  <line x1="20" y1="880" x2="780" y2="880" stroke="#d4d4d0" stroke-width="1" stroke-dasharray="4 4"/>
+  <text x="400" y="910" text-anchor="middle" font-size="14" fill="#6b6b6b" font-style="italic">…two turns later, Marco shifts addressee back to Sam…</text>
+
+  <!-- ============================================ -->
+  <!-- TURN 7 PANEL -->
+  <!-- ============================================ -->
+
+  <!-- Panel header -->
+  <rect x="20" y="940" width="760" height="48" fill="#1a1a1a" rx="4"/>
+  <text x="38" y="970" font-size="18" font-weight="700" fill="#ffffff">Turn 7 — Marco → Sam</text>
+  <text x="762" y="970" text-anchor="end" font-size="12" fill="#a8a8a8" font-family="ui-monospace, 'SF Mono', Menlo, monospace">(Marco, Sam)</text>
+
+  <!-- 1. Character card -->
+  <rect x="20" y="1004" width="760" height="60" fill="#eef2f7" stroke="#c8d4e0" stroke-width="1" rx="4"/>
+  <text x="38" y="1026" font-size="13" font-weight="600" fill="#5a6b80" font-family="ui-monospace, 'SF Mono', Menlo, monospace">SYSTEM</text>
+  <text x="38" y="1050" font-size="16" fill="#2d2d2d" font-style="italic">Marco's character card — byte-identical to Turn 5</text>
+
+  <!-- 2. Summary -->
+  <rect x="20" y="1076" width="760" height="184" fill="#f0e8f0" stroke="#c8b8d0" stroke-width="1" rx="4"/>
+  <text x="38" y="1098" font-size="13" font-weight="600" fill="#7050a0" font-family="ui-monospace, 'SF Mono', Menlo, monospace">SYSTEM — LAZY SUMMARY</text>
+  <text x="38" y="1124" font-size="16" fill="#2d2d2d">Earlier in the scene: Sam arrived at Elena's</text>
+  <text x="38" y="1144" font-size="16" fill="#2d2d2d">apartment for dinner and met Marco for the first</text>
+  <text x="38" y="1164" font-size="16" fill="#2d2d2d">time. Marco greeted Sam with a self-deprecating</text>
+  <text x="38" y="1184" font-size="16" fill="#2d2d2d">joke about Elena having talked about him. Elena</text>
+  <text x="38" y="1204" font-size="16" fill="#2d2d2d">welcomed Sam and brushed off Marco's nervousness.</text>
+  <text x="38" y="1224" font-size="16" fill="#2d2d2d">Sam asked Marco what he did, and Marco said...</text>
+
+  <!-- 3. Active pair body: user (Sam earlier) -->
+  <rect x="20" y="1272" width="760" height="60" fill="#faf3e8" stroke="#e0d3b8" stroke-width="1" rx="4"/>
+  <text x="38" y="1294" font-size="13" font-weight="600" fill="#806020" font-family="ui-monospace, 'SF Mono', Menlo, monospace">USER — Sam's earlier message from (Marco, Sam) pair</text>
+  <text x="38" y="1318" font-size="16" fill="#2d2d2d">what do you do Marco?</text>
+
+  <!-- 4. Active pair body: assistant (Marco earlier) -->
+  <rect x="20" y="1344" width="760" height="88" fill="#e8f4ea" stroke="#a8d4b4" stroke-width="1" rx="4"/>
+  <text x="38" y="1366" font-size="13" font-weight="600" fill="#1a8a5a" font-family="ui-monospace, 'SF Mono', Menlo, monospace">ASSISTANT — Marco's earlier reply (rotated)</text>
+  <text x="38" y="1392" font-size="16" fill="#2d2d2d">I write. Or I try to. Working on a novel, but</text>
+  <text x="38" y="1412" font-size="16" fill="#2d2d2d">it's been four years and it's still not done.</text>
+
+  <!-- 5. Cross-events (with envelope) -->
+  <rect x="20" y="1444" width="760" height="208" fill="#fff3e0" stroke="#e8c896" stroke-width="1" rx="4"/>
+  <text x="38" y="1466" font-size="13" font-weight="600" fill="#a06820" font-family="ui-monospace, 'SF Mono', Menlo, monospace">SYSTEM — CROSS-PAIR EVENTS (narrative envelope)</text>
+  <text x="38" y="1492" font-size="16" fill="#2d2d2d">Recent events in the scene:</text>
+  <text x="38" y="1516" font-size="16" fill="#2d2d2d">— <tspan fill="#c8421a" font-weight="700">A moment ago,</tspan> Elena said to Marco:</text>
+  <text x="38" y="1536" font-size="16" fill="#2d2d2d">"Marco, stop doing that. The book is good and</text>
+  <text x="38" y="1556" font-size="16" fill="#2d2d2d">you know it. Why do you always make it sound..."</text>
+  <text x="38" y="1584" font-size="16" fill="#2d2d2d">— <tspan fill="#c8421a" font-weight="700">A moment ago,</tspan> Elena said to Marco:</text>
+  <text x="38" y="1604" font-size="16" fill="#2d2d2d">"It's not where it should be yet. That's not the</text>
+  <text x="38" y="1624" font-size="16" fill="#2d2d2d">same as failing. You'll get there, Marco..."</text>
+
+  <!-- 6. Current scene -->
+  <rect x="20" y="1664" width="760" height="184" fill="#eef2f7" stroke="#c8d4e0" stroke-width="1" rx="4"/>
+  <text x="38" y="1686" font-size="13" font-weight="600" fill="#5a6b80" font-family="ui-monospace, 'SF Mono', Menlo, monospace">SYSTEM — CURRENT SCENE STATE</text>
+  <text x="38" y="1712" font-size="16" fill="#2d2d2d">Current scene: It's evening. You are at Elena's</text>
+  <text x="38" y="1732" font-size="16" fill="#2d2d2d">Apartment. Sam is here with you. You do not really</text>
+  <text x="38" y="1752" font-size="16" fill="#2d2d2d">know Sam. Elena is also part of this conversation.</text>
+  <text x="38" y="1772" font-size="16" fill="#2d2d2d">Elena is your Friend. You like <tspan fill="#c8421a" font-weight="700">her</tspan> a lot;</text>
+  <text x="38" y="1792" font-size="16" fill="#2d2d2d">you genuinely enjoy <tspan fill="#c8421a" font-weight="700">her</tspan> company.</text>
+  <text x="38" y="1820" font-size="16" font-weight="700" fill="#5a4fcf">You are speaking directly to Sam.</text>
+
+  <!-- 7. User: synthetic framing -->
+  <rect x="20" y="1860" width="760" height="88" fill="#faf3e8" stroke="#e0d3b8" stroke-width="1" rx="4"/>
+  <text x="38" y="1882" font-size="13" font-weight="600" fill="#806020" font-family="ui-monospace, 'SF Mono', Menlo, monospace">USER — synthetic framing (shift of addressee)</text>
+  <text x="38" y="1908" font-size="16" fill="#2d2d2d" font-style="italic">(You turn your attention to Sam. Sam is waiting</text>
+  <text x="38" y="1928" font-size="16" fill="#2d2d2d" font-style="italic">to hear what you'll say.)</text>
+
+  <!-- Response label -->
+  <text x="38" y="1980" font-size="14" font-weight="600" fill="#1a8a5a" font-family="ui-monospace, 'SF Mono', Menlo, monospace">↓ LLM RESPONSE</text>
+
+  <!-- Response box -->
+  <rect x="20" y="1994" width="760" height="106" fill="#e8f4ea" stroke="#a8d4b4" stroke-width="1" rx="4"/>
+  <text x="38" y="2018" font-size="13" font-weight="600" fill="#1a8a5a" font-family="ui-monospace, 'SF Mono', Menlo, monospace">MARCO</text>
+  <text x="38" y="2044" font-size="16" fill="#1a1a1a" font-weight="500">[talking] Sorry, Sam. You came for dinner, not for</text>
+  <text x="38" y="2064" font-size="16" fill="#1a1a1a" font-weight="500">me having a crisis about my book. So... what about</text>
+  <text x="38" y="2084" font-size="16" fill="#1a1a1a" font-weight="500">you? Elena said you two work together?</text>
+
+  <!-- ============================================ -->
+  <!-- BOTTOM ANNOTATIONS -->
+  <!-- ============================================ -->
+
+  <line x1="20" y1="2150" x2="780" y2="2150" stroke="#d4d4d0" stroke-width="1"/>
+
+  <text x="400" y="2185" text-anchor="middle" font-size="17" font-weight="700" fill="#1a1a1a">
+    Three load-bearing details (in red)
+  </text>
+
+  <!-- Annotation 1 -->
+  <text x="38" y="2220" font-size="15" font-weight="700" fill="#c8421a">1. The narrative envelope</text>
+  <text x="38" y="2244" font-size="14" fill="#2d2d2d">"A moment ago, X said to Y" — not the bare</text>
+  <text x="38" y="2262" font-size="14" fill="#2d2d2d">transcript form. Tested: 60% → 88–92%.</text>
+
+  <!-- Annotation 2 -->
+  <text x="38" y="2300" font-size="15" font-weight="700" fill="#c8421a">2. Pronouns after the first mention</text>
+  <text x="38" y="2324" font-size="14" fill="#2d2d2d">"You like <tspan font-weight="700">her</tspan> a lot" — not "You like Elena</text>
+  <text x="38" y="2342" font-size="14" fill="#2d2d2d">a lot". Tested: 70% → ~92%.</text>
+
+  <!-- Annotation 3 -->
+  <text x="38" y="2380" font-size="15" font-weight="700" fill="#c8421a">3. Ephemeral parenthetical</text>
+  <text x="38" y="2404" font-size="14" fill="#2d2d2d">"(X is waiting for your response.)" glued at</text>
+  <text x="38" y="2422" font-size="14" fill="#2d2d2d">send-list build time. Never persisted.</text>
+
+  <!-- Closing line -->
+  <text x="400" y="2470" text-anchor="middle" font-size="14" fill="#2d2d2d">
+    Same Marco. Same card. Different active pair →
+  </text>
+  <text x="400" y="2490" text-anchor="middle" font-size="14" fill="#2d2d2d">
+    different prompt shape. The LLM only sees a 1:1.
+  </text>
+
+  <!-- Footer note -->
+  <text x="400" y="2522" text-anchor="middle" font-size="11" fill="#6b6b6b" font-style="italic">Send-lists copied verbatim. Character card collapsed for layout.</text>
+
+</svg>

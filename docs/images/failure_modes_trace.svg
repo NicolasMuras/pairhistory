@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1450" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+  <!-- Background -->
+  <rect width="800" height="1450" fill="#fafaf7"/>
+
+  <!-- ============================================ -->
+  <!-- HEADER -->
+  <!-- ============================================ -->
+  <text x="400" y="50" text-anchor="middle" font-size="22" font-weight="700" fill="#1a1a1a">
+    Three failure modes in one trace
+  </text>
+  <text x="400" y="80" text-anchor="middle" font-size="15" fill="#6b6b6b">
+    All structural — not bugs you can prompt away
+  </text>
+
+  <!-- ============================================ -->
+  <!-- TURN 6 — ROLE BLEED (the dramatic one) -->
+  <!-- ============================================ -->
+
+  <!-- Header bar -->
+  <rect x="20" y="120" width="760" height="44" fill="#c8421a" rx="4"/>
+  <text x="38" y="148" font-size="15" font-weight="700" fill="#ffffff">Turn 6 — Role bleed</text>
+  <text x="762" y="148" text-anchor="end" font-size="12" fill="#ffd5c5" font-family="ui-monospace, 'SF Mono', Menlo, monospace">role=assistant</text>
+
+  <!-- Code block -->
+  <rect x="20" y="178" width="760" height="180" fill="#1e1e1e" rx="6"/>
+  <text x="40" y="214" font-size="15" fill="#e0e0e0" font-family="ui-monospace, 'SF Mono', Menlo, monospace">"Don't turn this on me.</text>
+  <text x="40" y="240" font-size="15" fill="#e0e0e0" font-family="ui-monospace, 'SF Mono', Menlo, monospace">I'm not the one who's been</text>
+  <text x="40" y="266" font-size="15" fill="#e0e0e0" font-family="ui-monospace, 'SF Mono', Menlo, monospace">keeping secrets...</text>
+  <text x="40" y="298" font-size="15" font-weight="700" fill="#ff8866" font-family="ui-monospace, 'SF Mono', Menlo, monospace">\n user \n B: *B steps</text>
+  <text x="40" y="322" font-size="15" font-weight="700" fill="#ff8866" font-family="ui-monospace, 'SF Mono', Menlo, monospace">forward and...*"</text>
+
+  <!-- Annotation below -->
+  <rect x="20" y="376" width="760" height="100" fill="#fff3ef" stroke="#c8421a" stroke-width="1" rx="4"/>
+  <text x="38" y="402" font-size="13" font-weight="700" fill="#c8421a">↑ The model generated another participant's turn inside its own response.</text>
+  <text x="38" y="426" font-size="13" fill="#2d2d2d">It saw an alternating multi-party transcript and decided the natural</text>
+  <text x="38" y="446" font-size="13" fill="#2d2d2d">continuation was the next turn in that transcript — not the end of its own.</text>
+
+  <!-- ============================================ -->
+  <!-- TURN 11 — IDENTITY DRIFT -->
+  <!-- ============================================ -->
+
+  <!-- Header bar -->
+  <rect x="20" y="510" width="760" height="44" fill="#1a1a1a" rx="4"/>
+  <text x="38" y="538" font-size="15" font-weight="700" fill="#ffffff">Turn 11 — Identity drift</text>
+  <text x="762" y="538" text-anchor="end" font-size="12" fill="#a8a8a8" font-family="ui-monospace, 'SF Mono', Menlo, monospace">role=assistant</text>
+
+  <!-- Code block -->
+  <rect x="20" y="568" width="760" height="120" fill="#1e1e1e" rx="6"/>
+  <text x="40" y="604" font-size="15" fill="#9cdcfe" font-family="ui-monospace, 'SF Mono', Menlo, monospace">[hurt]</text>
+  <text x="100" y="604" font-size="15" fill="#e0e0e0" font-family="ui-monospace, 'SF Mono', Menlo, monospace">How can you say that didn't</text>
+  <text x="40" y="628" font-size="15" fill="#e0e0e0" font-family="ui-monospace, 'SF Mono', Menlo, monospace">mean anything to me? After</text>
+  <text x="40" y="652" font-size="15" fill="#e0e0e0" font-family="ui-monospace, 'SF Mono', Menlo, monospace">everything we shared...</text>
+
+  <!-- Annotation -->
+  <rect x="20" y="704" width="760" height="80" fill="#fff3ef" stroke="#c8421a" stroke-width="1" rx="4"/>
+  <text x="38" y="730" font-size="13" font-weight="700" fill="#c8421a">↑ Marked as A's turn, but the content is in B's voice.</text>
+  <text x="38" y="754" font-size="13" fill="#2d2d2d">Rotating "assistant" ownership across turns, the model loses track of</text>
+  <text x="38" y="774" font-size="13" fill="#2d2d2d">whose turn this is. The dialogue is coherent — just attributed wrong.</text>
+
+  <!-- ============================================ -->
+  <!-- TURN 13 — RECEIVER CONFUSION -->
+  <!-- ============================================ -->
+
+  <!-- Header bar -->
+  <rect x="20" y="820" width="760" height="44" fill="#1a1a1a" rx="4"/>
+  <text x="38" y="848" font-size="15" font-weight="700" fill="#ffffff">Turn 13 — Receiver confusion</text>
+  <text x="762" y="848" text-anchor="end" font-size="12" fill="#a8a8a8" font-family="ui-monospace, 'SF Mono', Menlo, monospace">role=assistant</text>
+
+  <!-- Code block -->
+  <rect x="20" y="878" width="760" height="120" fill="#1e1e1e" rx="6"/>
+  <text x="40" y="914" font-size="15" fill="#9cdcfe" font-family="ui-monospace, 'SF Mono', Menlo, monospace">[angry]</text>
+  <text x="110" y="914" font-size="15" fill="#e0e0e0" font-family="ui-monospace, 'SF Mono', Menlo, monospace">What the fuck, C?!</text>
+  <text x="40" y="938" font-size="15" fill="#e0e0e0" font-family="ui-monospace, 'SF Mono', Menlo, monospace">Shut your mouth before</text>
+  <text x="40" y="962" font-size="15" fill="#e0e0e0" font-family="ui-monospace, 'SF Mono', Menlo, monospace">I—</text>
+
+  <!-- Annotation -->
+  <rect x="20" y="1014" width="760" height="100" fill="#fff3ef" stroke="#c8421a" stroke-width="1" rx="4"/>
+  <text x="38" y="1040" font-size="13" font-weight="700" fill="#c8421a">↑ A addressing C with B's emotional register.</text>
+  <text x="38" y="1064" font-size="13" fill="#2d2d2d">No structural anchor for "who am I talking to right now" — only the</text>
+  <text x="38" y="1084" font-size="13" fill="#2d2d2d">implicit signal of the most recent message in a flat transcript that</text>
+  <text x="38" y="1104" font-size="13" fill="#2d2d2d">contains everyone. The model picks wrong.</text>
+
+  <!-- ============================================ -->
+  <!-- BOTTOM TAKEAWAY -->
+  <!-- ============================================ -->
+  <line x1="20" y1="1180" x2="780" y2="1180" stroke="#d4d4d0" stroke-width="1"/>
+
+  <text x="400" y="1218" text-anchor="middle" font-size="15" font-weight="700" fill="#1a1a1a">
+    Three different failure modes.
+  </text>
+  <text x="400" y="1244" text-anchor="middle" font-size="15" font-weight="700" fill="#1a1a1a">
+    One shared root cause.
+  </text>
+
+  <text x="400" y="1290" text-anchor="middle" font-size="14" fill="#2d2d2d">
+    The model is being asked to interpret a transcript it has
+  </text>
+  <text x="400" y="1310" text-anchor="middle" font-size="14" fill="#2d2d2d">
+    no architectural reason to interpret correctly.
+  </text>
+
+  <!-- Footer note -->
+  <text x="400" y="1390" text-anchor="middle" font-size="11" fill="#6b6b6b" font-style="italic">
+    Real trace from an early prototype. Dialogue simplified for the post;
+  </text>
+  <text x="400" y="1408" text-anchor="middle" font-size="11" fill="#6b6b6b" font-style="italic">
+    structural failures intact.
+  </text>
+
+</svg>

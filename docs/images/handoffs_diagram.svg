@@ -1,0 +1,144 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+  <!-- Background -->
+  <rect width="1200" height="900" fill="#fafaf7"/>
+
+  <!-- ============================================ -->
+  <!-- HEADER -->
+  <!-- ============================================ -->
+  <text x="600" y="48" text-anchor="middle" font-size="22" font-weight="700" fill="#1a1a1a">
+    Handoffs are reorganizations, not migrations
+  </text>
+  <text x="600" y="76" text-anchor="middle" font-size="15" fill="#6b6b6b">
+    Pair histories make scene-shape changes almost trivial.
+  </text>
+
+  <!-- ============================================ -->
+  <!-- TOP PANEL: WALK-IN (single → multi) -->
+  <!-- ============================================ -->
+
+  <text x="40" y="130" font-size="18" font-weight="700" fill="#1a1a1a">Walk-in: single → multi</text>
+  <text x="40" y="154" font-size="14" fill="#6b6b6b">Elena joins a 1:1 conversation between Marco and Sam. The existing history becomes one pair; new pairs start empty.</text>
+
+  <!-- BEFORE (left side, walk-in) -->
+  <text x="160" y="200" text-anchor="middle" font-size="13" font-weight="600" fill="#5a6b80" font-family="ui-monospace, 'SF Mono', Menlo, monospace">BEFORE</text>
+
+  <!-- Single-party history box -->
+  <rect x="60" y="216" width="200" height="120" fill="#eef2f7" stroke="#5a4fcf" stroke-width="2" rx="6"/>
+  <text x="160" y="240" text-anchor="middle" font-size="14" font-weight="600" fill="#5a4fcf">(Marco, Sam)</text>
+  <text x="160" y="264" text-anchor="middle" font-size="12" fill="#2d2d2d">4 events</text>
+  <text x="80" y="288" font-size="11" fill="#6b6b6b" font-family="ui-monospace, 'SF Mono', Menlo, monospace">Sam: hey, finally...</text>
+  <text x="80" y="304" font-size="11" fill="#6b6b6b" font-family="ui-monospace, 'SF Mono', Menlo, monospace">Marco: Yeah, finally...</text>
+  <text x="80" y="320" font-size="11" fill="#6b6b6b" font-family="ui-monospace, 'SF Mono', Menlo, monospace">Sam: what do you do...</text>
+
+  <!-- Arrow -->
+  <line x1="320" y1="270" x2="430" y2="270" stroke="#1a1a1a" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="375" y="258" text-anchor="middle" font-size="13" font-weight="600" fill="#1a1a1a">Elena walks in</text>
+  <text x="375" y="290" text-anchor="middle" font-size="12" fill="#6b6b6b" font-style="italic">no migration</text>
+
+  <!-- AFTER (right side, walk-in) -->
+  <text x="800" y="200" text-anchor="middle" font-size="13" font-weight="600" fill="#5a6b80" font-family="ui-monospace, 'SF Mono', Menlo, monospace">AFTER</text>
+
+  <!-- (Marco, Sam) preserved -->
+  <rect x="490" y="216" width="200" height="120" fill="#eef2f7" stroke="#5a4fcf" stroke-width="2" rx="6"/>
+  <text x="590" y="240" text-anchor="middle" font-size="14" font-weight="600" fill="#5a4fcf">(Marco, Sam)</text>
+  <text x="590" y="264" text-anchor="middle" font-size="12" fill="#2d2d2d">4 events (unchanged)</text>
+  <text x="510" y="288" font-size="11" fill="#6b6b6b" font-family="ui-monospace, 'SF Mono', Menlo, monospace">Sam: hey, finally...</text>
+  <text x="510" y="304" font-size="11" fill="#6b6b6b" font-family="ui-monospace, 'SF Mono', Menlo, monospace">Marco: Yeah, finally...</text>
+  <text x="510" y="320" font-size="11" fill="#6b6b6b" font-family="ui-monospace, 'SF Mono', Menlo, monospace">Sam: what do you do...</text>
+
+  <!-- (Marco, Elena) new -->
+  <rect x="710" y="216" width="200" height="56" fill="#fff" stroke="#c8421a" stroke-width="2" stroke-dasharray="4 3" rx="6"/>
+  <text x="810" y="240" text-anchor="middle" font-size="14" font-weight="600" fill="#c8421a">(Marco, Elena)</text>
+  <text x="810" y="260" text-anchor="middle" font-size="11" fill="#c8421a" font-style="italic">empty — new pair</text>
+
+  <!-- (Elena, Sam) new -->
+  <rect x="710" y="280" width="200" height="56" fill="#fff" stroke="#c8421a" stroke-width="2" stroke-dasharray="4 3" rx="6"/>
+  <text x="810" y="304" text-anchor="middle" font-size="14" font-weight="600" fill="#c8421a">(Elena, Sam)</text>
+  <text x="810" y="324" text-anchor="middle" font-size="11" fill="#c8421a" font-style="italic">empty — new pair</text>
+
+  <!-- Caption -->
+  <text x="600" y="380" text-anchor="middle" font-size="13" fill="#2d2d2d">
+    Elena has no memory of what was just said. She just walked in.
+  </text>
+
+  <!-- ============================================ -->
+  <!-- DIVIDER -->
+  <!-- ============================================ -->
+  <line x1="40" y1="430" x2="1160" y2="430" stroke="#d4d4d0" stroke-width="1"/>
+
+  <!-- ============================================ -->
+  <!-- BOTTOM PANEL: DEPARTURE (multi → single) -->
+  <!-- ============================================ -->
+
+  <text x="40" y="478" font-size="18" font-weight="700" fill="#1a1a1a">Departure: multi → single</text>
+  <text x="40" y="502" font-size="14" fill="#6b6b6b">Marco leaves. Elena stays with Sam. The (Elena, Sam) pair history becomes the new single-party history.</text>
+
+  <!-- BEFORE (left side, departure) -->
+  <text x="160" y="548" text-anchor="middle" font-size="13" font-weight="600" fill="#5a6b80" font-family="ui-monospace, 'SF Mono', Menlo, monospace">BEFORE</text>
+
+  <!-- (Marco, Sam) -->
+  <rect x="60" y="564" width="200" height="50" fill="#eef2f7" stroke="#888" stroke-width="1.5" rx="6"/>
+  <text x="160" y="586" text-anchor="middle" font-size="13" font-weight="600" fill="#888">(Marco, Sam)</text>
+  <text x="160" y="604" text-anchor="middle" font-size="11" fill="#888">6 events</text>
+
+  <!-- (Marco, Elena) -->
+  <rect x="60" y="622" width="200" height="50" fill="#eef2f7" stroke="#888" stroke-width="1.5" rx="6"/>
+  <text x="160" y="644" text-anchor="middle" font-size="13" font-weight="600" fill="#888">(Marco, Elena)</text>
+  <text x="160" y="662" text-anchor="middle" font-size="11" fill="#888">3 events</text>
+
+  <!-- (Elena, Sam) — the one that becomes single-party -->
+  <rect x="60" y="680" width="200" height="50" fill="#eef2f7" stroke="#5a4fcf" stroke-width="2" rx="6"/>
+  <text x="160" y="702" text-anchor="middle" font-size="13" font-weight="600" fill="#5a4fcf">(Elena, Sam)</text>
+  <text x="160" y="720" text-anchor="middle" font-size="11" fill="#2d2d2d">5 events</text>
+
+  <!-- Arrow -->
+  <line x1="320" y1="640" x2="430" y2="640" stroke="#1a1a1a" stroke-width="2" marker-end="url(#arrow)"/>
+  <text x="375" y="628" text-anchor="middle" font-size="13" font-weight="600" fill="#1a1a1a">Marco leaves</text>
+  <text x="375" y="660" text-anchor="middle" font-size="12" fill="#6b6b6b" font-style="italic">no migration</text>
+
+  <!-- AFTER (right side, departure) -->
+  <text x="800" y="548" text-anchor="middle" font-size="13" font-weight="600" fill="#5a6b80" font-family="ui-monospace, 'SF Mono', Menlo, monospace">AFTER</text>
+
+  <!-- Marco's pairs archived -->
+  <rect x="490" y="564" width="200" height="50" fill="#f3f3f0" stroke="#bbb" stroke-width="1" stroke-dasharray="3 3" rx="6"/>
+  <text x="590" y="586" text-anchor="middle" font-size="13" font-weight="600" fill="#999">(Marco, Sam)</text>
+  <text x="590" y="604" text-anchor="middle" font-size="11" fill="#999" font-style="italic">archived as pending event</text>
+
+  <rect x="490" y="622" width="200" height="50" fill="#f3f3f0" stroke="#bbb" stroke-width="1" stroke-dasharray="3 3" rx="6"/>
+  <text x="590" y="644" text-anchor="middle" font-size="13" font-weight="600" fill="#999">(Marco, Elena)</text>
+  <text x="590" y="662" text-anchor="middle" font-size="11" fill="#999" font-style="italic">archived as pending event</text>
+
+  <!-- (Elena, Sam) becomes single-party -->
+  <rect x="710" y="680" width="280" height="50" fill="#e8f4ea" stroke="#5a4fcf" stroke-width="2" rx="6"/>
+  <text x="850" y="702" text-anchor="middle" font-size="13" font-weight="600" fill="#5a4fcf">single-party history (Elena, Sam)</text>
+  <text x="850" y="720" text-anchor="middle" font-size="11" fill="#2d2d2d">5 events — same data, new format</text>
+
+  <!-- arrow from before to after for the surviving pair -->
+  <line x1="265" y1="705" x2="700" y2="705" stroke="#5a4fcf" stroke-width="1.5" stroke-dasharray="3 3" marker-end="url(#arrowPurple)"/>
+
+  <!-- Caption -->
+  <text x="600" y="778" text-anchor="middle" font-size="13" fill="#2d2d2d">
+    The conversation continues. Elena and Sam don't lose anything — same history, just one less participant.
+  </text>
+
+  <!-- ============================================ -->
+  <!-- BOTTOM TAKEAWAY -->
+  <!-- ============================================ -->
+  <line x1="40" y1="820" x2="1160" y2="820" stroke="#d4d4d0" stroke-width="1"/>
+  <text x="600" y="855" text-anchor="middle" font-size="14" font-weight="700" fill="#c8421a">
+    No summarization. No card mutation. No state migration.
+  </text>
+  <text x="600" y="878" text-anchor="middle" font-size="13" fill="#2d2d2d">
+    Once pair histories are first-class, scene-shape changes are conversions between representations.
+  </text>
+
+  <!-- Arrow markers -->
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#1a1a1a"/>
+    </marker>
+    <marker id="arrowPurple" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto-start-reverse">
+      <path d="M 0 0 L 10 5 L 0 10 z" fill="#5a4fcf"/>
+    </marker>
+  </defs>
+</svg>

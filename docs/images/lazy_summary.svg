@@ -1,0 +1,141 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+  <!-- Background -->
+  <rect width="800" height="1000" fill="#fafaf7"/>
+
+  <!-- ============================================ -->
+  <!-- HEADER -->
+  <!-- ============================================ -->
+  <text x="400" y="50" text-anchor="middle" font-size="22" font-weight="700" fill="#1a1a1a">
+    Lazy summary with a body-fresh buffer
+  </text>
+  <text x="400" y="80" text-anchor="middle" font-size="15" fill="#6b6b6b">
+    Older turns compressed into the summary. Recent turns stay verbatim.
+  </text>
+
+  <!-- ============================================ -->
+  <!-- TIMELINE LABEL -->
+  <!-- ============================================ -->
+  <text x="400" y="135" text-anchor="middle" font-size="13" font-weight="600" fill="#5a6b80" font-family="ui-monospace, 'SF Mono', Menlo, monospace">TURNS IN A SCENE</text>
+
+  <!-- ============================================ -->
+  <!-- TURNS 1-10 (visual blocks) -->
+  <!-- ============================================ -->
+  <!-- Turns 1-7: compressed into summary (purple) -->
+  <!-- Turns 8-10: body-fresh buffer (cream/orange) -->
+
+  <!-- Bracket above turns 1-7 -->
+  <path d="M 60 175 L 60 165 L 520 165 L 520 175" fill="none" stroke="#7050a0" stroke-width="2"/>
+  <text x="290" y="155" text-anchor="middle" font-size="13" font-weight="700" fill="#7050a0">summary cutoff: turns 1–7</text>
+
+  <!-- Bracket above turns 8-10 -->
+  <path d="M 540 175 L 540 165 L 740 165 L 740 175" fill="none" stroke="#a06820" stroke-width="2"/>
+  <text x="640" y="155" text-anchor="middle" font-size="13" font-weight="700" fill="#a06820">body-fresh buffer</text>
+
+  <!-- Turn blocks -->
+  <g font-family="ui-monospace, 'SF Mono', Menlo, monospace" font-size="14" font-weight="600">
+    <!-- Compressed turns -->
+    <rect x="60" y="185" width="60" height="60" fill="#f0e8f0" stroke="#7050a0" stroke-width="1.5" rx="4"/>
+    <text x="90" y="222" text-anchor="middle" fill="#7050a0">T1</text>
+
+    <rect x="125" y="185" width="60" height="60" fill="#f0e8f0" stroke="#7050a0" stroke-width="1.5" rx="4"/>
+    <text x="155" y="222" text-anchor="middle" fill="#7050a0">T2</text>
+
+    <rect x="190" y="185" width="60" height="60" fill="#f0e8f0" stroke="#7050a0" stroke-width="1.5" rx="4"/>
+    <text x="220" y="222" text-anchor="middle" fill="#7050a0">T3</text>
+
+    <rect x="255" y="185" width="60" height="60" fill="#f0e8f0" stroke="#7050a0" stroke-width="1.5" rx="4"/>
+    <text x="285" y="222" text-anchor="middle" fill="#7050a0">T4</text>
+
+    <rect x="320" y="185" width="60" height="60" fill="#f0e8f0" stroke="#7050a0" stroke-width="1.5" rx="4"/>
+    <text x="350" y="222" text-anchor="middle" fill="#7050a0">T5</text>
+
+    <rect x="385" y="185" width="60" height="60" fill="#f0e8f0" stroke="#7050a0" stroke-width="1.5" rx="4"/>
+    <text x="415" y="222" text-anchor="middle" fill="#7050a0">T6</text>
+
+    <rect x="450" y="185" width="60" height="60" fill="#f0e8f0" stroke="#7050a0" stroke-width="1.5" rx="4"/>
+    <text x="480" y="222" text-anchor="middle" fill="#7050a0">T7</text>
+
+    <!-- Body-fresh buffer turns -->
+    <rect x="540" y="185" width="60" height="60" fill="#fff3e0" stroke="#a06820" stroke-width="1.5" rx="4"/>
+    <text x="570" y="222" text-anchor="middle" fill="#a06820">T8</text>
+
+    <rect x="605" y="185" width="60" height="60" fill="#fff3e0" stroke="#a06820" stroke-width="1.5" rx="4"/>
+    <text x="635" y="222" text-anchor="middle" fill="#a06820">T9</text>
+
+    <rect x="670" y="185" width="60" height="60" fill="#fff3e0" stroke="#a06820" stroke-width="1.5" rx="4"/>
+    <text x="700" y="222" text-anchor="middle" fill="#a06820">T10</text>
+  </g>
+
+  <!-- ============================================ -->
+  <!-- ARROWS DOWN -->
+  <!-- ============================================ -->
+  <line x1="290" y1="270" x2="290" y2="320" stroke="#7050a0" stroke-width="2" marker-end="url(#arrowPurple)"/>
+  <line x1="640" y1="270" x2="640" y2="320" stroke="#a06820" stroke-width="2" marker-end="url(#arrowOrange)"/>
+
+  <!-- ============================================ -->
+  <!-- WHAT GETS SENT TO THE LLM -->
+  <!-- ============================================ -->
+  <text x="400" y="358" text-anchor="middle" font-size="13" font-weight="600" fill="#5a6b80" font-family="ui-monospace, 'SF Mono', Menlo, monospace">WHAT THE LLM RECEIVES ON TURN 11</text>
+
+  <!-- Summary box -->
+  <rect x="60" y="380" width="460" height="160" fill="#f0e8f0" stroke="#7050a0" stroke-width="2" rx="6"/>
+  <text x="78" y="406" font-size="13" font-weight="600" fill="#7050a0" font-family="ui-monospace, 'SF Mono', Menlo, monospace">SYSTEM — LAZY SUMMARY</text>
+  <text x="78" y="430" font-size="13" fill="#2d2d2d">"Earlier in the scene: Sam arrived</text>
+  <text x="78" y="448" font-size="13" fill="#2d2d2d">for dinner. Marco greeted him with a</text>
+  <text x="78" y="466" font-size="13" fill="#2d2d2d">self-deprecating joke. Elena welcomed</text>
+  <text x="78" y="484" font-size="13" fill="#2d2d2d">Sam and brushed off Marco's nervousness.</text>
+  <text x="78" y="502" font-size="13" fill="#2d2d2d">Sam asked Marco what he did, and Marco</text>
+  <text x="78" y="520" font-size="13" fill="#2d2d2d">said he was working on a novel..."</text>
+
+  <!-- Raw body box -->
+  <rect x="540" y="380" width="200" height="160" fill="#fff3e0" stroke="#a06820" stroke-width="2" rx="6"/>
+  <text x="558" y="406" font-size="13" font-weight="600" fill="#a06820" font-family="ui-monospace, 'SF Mono', Menlo, monospace">BODY (RAW)</text>
+  <text x="558" y="430" font-size="13" fill="#2d2d2d">T8: ...</text>
+  <text x="558" y="448" font-size="13" fill="#2d2d2d">T9: ...</text>
+  <text x="558" y="466" font-size="13" fill="#2d2d2d">T10: ...</text>
+  <text x="558" y="500" font-size="11" fill="#a06820" font-style="italic">verbatim,</text>
+  <text x="558" y="516" font-size="11" fill="#a06820" font-style="italic">not compressed</text>
+
+  <!-- ============================================ -->
+  <!-- KEY INSIGHT -->
+  <!-- ============================================ -->
+  <line x1="20" y1="580" x2="780" y2="580" stroke="#d4d4d0" stroke-width="1"/>
+
+  <text x="400" y="618" text-anchor="middle" font-size="15" font-weight="700" fill="#1a1a1a">
+    Deliberate double-coverage on the freshest turns
+  </text>
+  <text x="400" y="660" text-anchor="middle" font-size="14" fill="#2d2d2d">
+    The summary may compress nuance the model still needs raw.
+  </text>
+  <text x="400" y="682" text-anchor="middle" font-size="14" fill="#2d2d2d">
+    Keep them in the body until they fall behind the cutoff.
+  </text>
+
+  <!-- ============================================ -->
+  <!-- LATENCY NUMBERS -->
+  <!-- ============================================ -->
+  <rect x="100" y="740" width="600" height="140" fill="#fff" stroke="#d4d4d0" stroke-width="1" rx="6"/>
+
+  <text x="400" y="772" text-anchor="middle" font-size="13" font-weight="600" fill="#5a6b80" font-family="ui-monospace, 'SF Mono', Menlo, monospace">RESULT: PROMPT SCALES SUBLINEARLY</text>
+
+  <text x="400" y="810" text-anchor="middle" font-size="32" font-weight="700" fill="#1a1a1a">
+    ~3s per turn
+  </text>
+
+  <text x="400" y="838" text-anchor="middle" font-size="13" fill="#2d2d2d">
+    Median latency on a 12B local model.
+  </text>
+  <text x="400" y="858" text-anchor="middle" font-size="13" fill="#2d2d2d">
+    Stable whether the conversation is one turn deep or seven.
+  </text>
+
+  <!-- Arrow markers -->
+  <defs>
+    <marker id="arrowPurple" viewBox="0 0 10 10" refX="5" refY="9" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M 0 0 L 10 0 L 5 10 z" fill="#7050a0"/>
+    </marker>
+    <marker id="arrowOrange" viewBox="0 0 10 10" refX="5" refY="9" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M 0 0 L 10 0 L 5 10 z" fill="#a06820"/>
+    </marker>
+  </defs>
+</svg>

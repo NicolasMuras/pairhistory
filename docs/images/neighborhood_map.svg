@@ -1,0 +1,87 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1200" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+  <!-- Background -->
+  <rect width="800" height="1200" fill="#fafaf7"/>
+
+  <!-- ============================================ -->
+  <!-- HEADER -->
+  <!-- ============================================ -->
+  <text x="400" y="50" text-anchor="middle" font-size="22" font-weight="700" fill="#1a1a1a">
+    The nearest neighborhood
+  </text>
+  <text x="400" y="80" text-anchor="middle" font-size="15" fill="#6b6b6b">
+    None of these solve the same problem. Each sits on a different axis.
+  </text>
+
+  <!-- ============================================ -->
+  <!-- CENTER NODE (this work) -->
+  <!-- ============================================ -->
+  <circle cx="400" cy="600" r="110" fill="#5a4fcf" stroke="#1a1a1a" stroke-width="2"/>
+  <text x="400" y="590" text-anchor="middle" font-size="14" font-weight="700" fill="#ffffff">This post</text>
+  <text x="400" y="612" text-anchor="middle" font-size="13" fill="#ffffff">Per-pair histories,</text>
+  <text x="400" y="630" text-anchor="middle" font-size="13" fill="#ffffff">deterministic</text>
+  <text x="400" y="648" text-anchor="middle" font-size="13" fill="#ffffff">orchestration</text>
+
+  <!-- ============================================ -->
+  <!-- TOP NODE: Stanford Generative Agents -->
+  <!-- ============================================ -->
+  <line x1="400" y1="490" x2="400" y2="280" stroke="#888" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <text x="412" y="380" font-size="12" fill="#5a4fcf" font-weight="600" font-style="italic">closest in spirit</text>
+  <text x="412" y="398" font-size="11" fill="#6b6b6b" font-style="italic">(LLM as content</text>
+  <text x="412" y="412" font-size="11" fill="#6b6b6b" font-style="italic">generator inside</text>
+  <text x="412" y="426" font-size="11" fill="#6b6b6b" font-style="italic">deterministic loop)</text>
+
+  <rect x="160" y="170" width="480" height="110" fill="#fff" stroke="#1a1a1a" stroke-width="2" rx="8"/>
+  <text x="180" y="200" font-size="16" font-weight="700" fill="#1a1a1a">Stanford Generative Agents</text>
+  <text x="180" y="220" font-size="12" fill="#6b6b6b">Park et al., 2023</text>
+  <text x="180" y="246" font-size="13" fill="#2d2d2d">Observation streams per agent, with memory retrieval and reflection.</text>
+  <text x="180" y="268" font-size="13" fill="#c8421a" font-weight="600">Different unit of decomposition: per-agent, not per-pair.</text>
+
+  <!-- ============================================ -->
+  <!-- BOTTOM-LEFT NODE: Cohesive Conversations -->
+  <!-- ============================================ -->
+  <line x1="320" y1="690" x2="220" y2="850" stroke="#888" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <text x="100" y="780" font-size="11" fill="#6b6b6b" font-style="italic">post-hoc</text>
+  <text x="100" y="794" font-size="11" fill="#6b6b6b" font-style="italic">detection</text>
+  <text x="100" y="808" font-size="11" fill="#6b6b6b" font-style="italic">vs prevention</text>
+
+  <rect x="40" y="870" width="380" height="120" fill="#fff" stroke="#1a1a1a" stroke-width="2" rx="8"/>
+  <text x="60" y="900" font-size="15" font-weight="700" fill="#1a1a1a">Cohesive Conversations</text>
+  <text x="60" y="918" font-size="15" font-weight="700" fill="#1a1a1a">/ SDR</text>
+  <text x="60" y="938" font-size="12" fill="#6b6b6b">Chu et al., 2024</text>
+  <text x="60" y="962" font-size="12" fill="#2d2d2d">Detects and corrects multi-party</text>
+  <text x="60" y="978" font-size="12" fill="#c8421a" font-weight="600">drift post-hoc, not prevention.</text>
+
+  <!-- ============================================ -->
+  <!-- BOTTOM-RIGHT NODE: Mantella -->
+  <!-- ============================================ -->
+  <line x1="480" y1="690" x2="580" y2="850" stroke="#888" stroke-width="1.5" stroke-dasharray="4 4"/>
+  <text x="600" y="780" font-size="11" fill="#6b6b6b" font-style="italic">same problem,</text>
+  <text x="600" y="794" font-size="11" fill="#6b6b6b" font-style="italic">standard</text>
+  <text x="600" y="808" font-size="11" fill="#6b6b6b" font-style="italic">approach</text>
+
+  <rect x="380" y="870" width="380" height="120" fill="#fff" stroke="#1a1a1a" stroke-width="2" rx="8"/>
+  <text x="400" y="900" font-size="15" font-weight="700" fill="#1a1a1a">Mantella</text>
+  <text x="400" y="918" font-size="12" fill="#6b6b6b">production mod, Skyrim/Fallout 4</text>
+  <text x="400" y="942" font-size="12" fill="#2d2d2d">Voice-driven NPC conversations,</text>
+  <text x="400" y="958" font-size="12" fill="#2d2d2d">up to 5 NPCs, persistent memory.</text>
+  <text x="400" y="978" font-size="12" fill="#c8421a" font-weight="600">Single shared message_thread.</text>
+
+  <!-- ============================================ -->
+  <!-- BOTTOM CAPTION -->
+  <!-- ============================================ -->
+  <line x1="20" y1="1050" x2="780" y2="1050" stroke="#d4d4d0" stroke-width="1"/>
+
+  <text x="400" y="1090" text-anchor="middle" font-size="14" fill="#2d2d2d">
+    I didn't find PairHistory documented as a first-class
+  </text>
+  <text x="400" y="1110" text-anchor="middle" font-size="14" fill="#2d2d2d">
+    architectural concept anywhere I looked.
+  </text>
+  <text x="400" y="1148" text-anchor="middle" font-size="13" fill="#6b6b6b" font-style="italic">
+    That doesn't mean nobody is doing this in production — almost
+  </text>
+  <text x="400" y="1166" text-anchor="middle" font-size="13" fill="#6b6b6b" font-style="italic">
+    certainly somebody is, in unpublished commercial systems.
+  </text>
+
+</svg>

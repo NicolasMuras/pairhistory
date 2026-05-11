@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 900" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif">
+  <!-- Background -->
+  <rect width="800" height="900" fill="#fafaf7"/>
+
+  <!-- ============================================ -->
+  <!-- HEADER -->
+  <!-- ============================================ -->
+  <text x="400" y="50" text-anchor="middle" font-size="22" font-weight="700" fill="#1a1a1a">
+    The balance tracker decides who speaks next
+  </text>
+  <text x="400" y="80" text-anchor="middle" font-size="15" fill="#6b6b6b">
+    Counter per participant. When the spread crosses a threshold, the lowest cuts in.
+  </text>
+
+  <!-- ============================================ -->
+  <!-- STATE: turn counters -->
+  <!-- ============================================ -->
+  <text x="400" y="140" text-anchor="middle" font-size="15" font-weight="600" fill="#5a6b80" font-family="ui-monospace, 'SF Mono', Menlo, monospace">CURRENT TURN COUNTS</text>
+
+  <!-- Sam bar -->
+  <text x="120" y="190" font-size="16" font-weight="600" fill="#1a1a1a">Sam (player)</text>
+  <rect x="120" y="200" width="450" height="32" fill="#eef2f7" stroke="#c8d4e0" stroke-width="1" rx="3"/>
+  <rect x="120" y="200" width="450" height="32" fill="#5a4fcf" rx="3"/>
+  <text x="595" y="222" font-size="16" font-weight="700" fill="#1a1a1a">3</text>
+
+  <!-- Marco bar -->
+  <text x="120" y="260" font-size="16" font-weight="600" fill="#1a1a1a">Marco</text>
+  <rect x="120" y="270" width="450" height="32" fill="#eef2f7" stroke="#c8d4e0" stroke-width="1" rx="3"/>
+  <rect x="120" y="270" width="300" height="32" fill="#5a4fcf" rx="3"/>
+  <text x="595" y="292" font-size="16" font-weight="700" fill="#1a1a1a">2</text>
+
+  <!-- Elena bar (the one that's behind) -->
+  <text x="120" y="330" font-size="16" font-weight="600" fill="#c8421a">Elena</text>
+  <rect x="120" y="340" width="450" height="32" fill="#eef2f7" stroke="#c8421a" stroke-width="2" rx="3"/>
+  <rect x="120" y="340" width="150" height="32" fill="#c8421a" rx="3"/>
+  <text x="595" y="362" font-size="16" font-weight="700" fill="#c8421a">1</text>
+
+  <!-- Threshold marker -->
+  <line x1="120" y1="395" x2="570" y2="395" stroke="#6b6b6b" stroke-width="1" stroke-dasharray="4 3"/>
+  <text x="120" y="418" font-size="13" fill="#6b6b6b" font-style="italic">spread (3 − 1 = 2) ≥ threshold → interruption triggered</text>
+
+  <!-- ============================================ -->
+  <!-- DECISION ARROW -->
+  <!-- ============================================ -->
+  <line x1="400" y1="450" x2="400" y2="510" stroke="#1a1a1a" stroke-width="2" marker-end="url(#arrowDown)"/>
+  <text x="420" y="488" font-size="13" fill="#2d2d2d" font-style="italic">code routes the next turn</text>
+
+  <!-- ============================================ -->
+  <!-- WHAT HAPPENS -->
+  <!-- ============================================ -->
+  <rect x="20" y="530" width="760" height="120" fill="#e8f4ea" stroke="#1a8a5a" stroke-width="2" rx="6"/>
+  <text x="38" y="558" font-size="14" font-weight="600" fill="#1a8a5a" font-family="ui-monospace, 'SF Mono', Menlo, monospace">NEXT TURN</text>
+  <text x="38" y="588" font-size="18" font-weight="700" fill="#1a1a1a">Elena → Marco</text>
+  <text x="38" y="614" font-size="14" fill="#2d2d2d">Instead of letting Sam take the floor again, the lowest-counter</text>
+  <text x="38" y="634" font-size="14" fill="#2d2d2d">participant (Elena) is queued to interrupt, addressing whoever fits.</text>
+
+  <!-- ============================================ -->
+  <!-- BOTTOM TAKEAWAYS -->
+  <!-- ============================================ -->
+  <line x1="20" y1="690" x2="780" y2="690" stroke="#d4d4d0" stroke-width="1"/>
+
+  <text x="400" y="730" text-anchor="middle" font-size="15" font-weight="700" fill="#1a1a1a">
+    The cheapest pattern. The biggest effect on scene feel.
+  </text>
+
+  <text x="400" y="772" text-anchor="middle" font-size="14" fill="#2d2d2d">
+    Without it: static turn order. Conversations feel mechanical.
+  </text>
+  <text x="400" y="794" text-anchor="middle" font-size="14" fill="#2d2d2d">
+    With it: NPCs cut each other off, defend each other, redirect each other.
+  </text>
+
+  <text x="400" y="836" text-anchor="middle" font-size="13" fill="#6b6b6b" font-style="italic">
+    The player counts toward balance too. Monopolize one NPC and the others cut in.
+  </text>
+
+  <!-- Arrow marker -->
+  <defs>
+    <marker id="arrowDown" viewBox="0 0 10 10" refX="5" refY="9" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M 0 0 L 10 0 L 5 10 z" fill="#1a1a1a"/>
+    </marker>
+  </defs>
+</svg>
